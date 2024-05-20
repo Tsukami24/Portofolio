@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "lobster", sans-serif;
+}
+
+body {
+    background-color: #66cdaa;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: mediumaquamarine;
+}
+
+.navbar {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 15px;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    background-color:  #008b8b;
+    box-shadow: 0px 10px 15px 0px rgba( 0, 0, 0, 0.5 );
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.name {
+    color: white;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.nav-menu > li > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav-menu > li > a:hover {
+    color: rgb(81, 232, 182);
+    transition: all 0.3s ease-in-out;
+    font-size: 25px;
+}
+
+.about {
+    padding: 60px;
+    box-sizing: border-box;
+    background-color: darkcyan;
+    width: 75%;
+    margin: -495px auto 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 15px 0px rgba( 0, 0, 0, 0.5 );
+    border-radius: 10px;
+}
+
+.img-me {
+    width: 25%;
+}
+
+.img-me img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.desc-me {
+    width: 65%;
+    color: white;
+}
+
+.desc-me h1 {
+    font-family: 'lobster';
+    font-size: 35px;
+}
+
+.container-skill {
+    text-align: center;
+    background-color: mediumaquamarine;
+    color: white;
+    padding: 5%;
+}
+
+
+.header-skill p:nth-child(1) {
+    margin-top: 10px;
+}
+
+.header-skill p:last-child {
+    margin-top: 10px;
+}
+
+
+.skill {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.card-skill {
+    background-color: darkcyan;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0px 10px 15px 0px rgba( 0, 0, 0, 0.5 );
+    transition: 0.3s ease;
+}
+
+.card-skill:hover {
+    transform: translateY(-15px);
+    background-color: rgb(81, 232, 182);
+}
+
+.icon-skill {
+    font-size: 70px;
+}
+
+.desc-skill h2 {
+    font-size: 16px;
+}
+
+.desc-skill p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+.container-project {
+    padding-top: 50px;
+    margin-bottom: 200px;
+}
+
+.img-project {
+    width: 50%;
+}
+
+.desc-project {
+    width: 50%;
+}
+
+.header-project {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.project-box {
+    color: white;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: darkcyan;
+    width: 60%;
+    justify-content: space-between;
+    box-shadow: 0px 10px 15px 0px rgba( 0, 0, 0, 0.5 );
+    border-radius: 20px;
+}
+
+.project-box:nth-child(odd) {
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.project-box:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-right: 50px;
+}
+
+.desc-project h1 {
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.desc-project p {
+    margin: 15px auto;
+    font-size: 22px;
+}
+
+.project-box img {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px -3px rgba(29,29,29,0.5) , 0px 0px 15px -3px rgba(29,29,29,0.5);
+    transition: transform 0.3 ease;
+    
+}
+
+.project-box img:hover {
+    transform: scale(1.1);
+    z-index:   0;
+    position: relative;
+}
+
+.project-box img:nth-child(2) {
+    margin: -100px;
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px -3px rgba(29,29,29,0.5) , 0px 0px 15px -3px rgba(29,29,29,0.5);
+    position: relative;
+}
+
+.project-box img:nth-child(2):hover {
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color: darkcyan;
+    padding: 40px 0px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer h1,
+.footer p {
+    margin: 10px auto;
+}
